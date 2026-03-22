@@ -1,89 +1,145 @@
-🚀 Responsive Web Page – Gushwork Assignment
+# 🚀 Responsive Web Page – Gushwork Assignment
+ 
 
+---
 
-
-
-
-
-
-
-
-
-📌 Overview
-
-This project is a fully responsive web page built using vanilla HTML, CSS, and JavaScript, following the provided Figma design specifications.
-
-It includes interactive UI components like:
-
-Sticky Header
-Image Carousel with Zoom Preview
-Tabs, Accordion, Modal
-Responsive Sliders and Navigation
-🎨 Design Reference
-
-🔗 Figma File:
-https://www.figma.com/design/DOv07H7C2tA5UrVLhmfwfW/Gushwork-Assignment
-
-✨ Features
-📱 Responsive Design
-Works across:
-Desktop 💻
-Tablet 📟
-Mobile 📱
-Built using Flexbox, Grid & Media Queries
-📌 Sticky Header
-Appears after scrolling past first fold
-Smooth transition animation
-Improves navigation experience
-🖼️ Image Carousel with Zoom 🔥
-Interactive slider:
-Next / Prev buttons
-Thumbnail navigation
-Zoom Feature:
-Hover over image to zoom
-Displays zoomed portion in separate preview panel
-Cursor-based dynamic zoom positioning
-🍔 Hamburger Menu
-Mobile navigation toggle
-Smooth dropdown interaction
-❓ FAQ Accordion
-Expand / Collapse sections
-Only one active at a time
-Accessible with ARIA attributes
-📩 Form Validation + Toast
-Email validation using Regex
-Error handling UI
-Toast notification on success
-🎞️ App Card Slider
-Horizontal scroll slider
-Dynamic width & responsive behavior
-📑 Tabs Component
-Interactive tab switching
-Previous / Next navigation support
-🪟 Modal Popup
-Open / Close modal
-Click outside to close
-Form submission handling
-🛠️ Tech Stack
-Technology	Usage
-HTML5	Structure
-CSS3	Styling & Layout
-JavaScript (ES6)	Interactivity
-📂 Project Structure
+## 📌 Overview
+ 
+A fully **responsive web page** built using **vanilla HTML, CSS, and JavaScript**, following the provided Figma design specifications.
+ 
+> 🎨 **Figma Design Reference:** [View Figma File](https://www.figma.com/design/DOv07H7C2tA5UrVLhmfwfW/Gushwork-Assignment)
+ 
+---
+ 
+## ✨ Features
+ 
+### 📱 Responsive Design
+- Fully compatible across **Desktop 💻**, **Tablet 📟**, and **Mobile 📱**
+- Built using **Flexbox**, **CSS Grid**, and **Media Queries**
+ 
+### 📌 Sticky Header
+- Activates after scrolling past the first fold
+- Smooth transition animation for seamless experience
+ 
+### 🖼️ Image Carousel with Zoom 🔥
+- **Next / Prev** navigation buttons
+- **Thumbnail strip** for quick image switching
+- **Zoom on hover** — displays zoomed portion in a separate preview panel
+- Cursor-based dynamic zoom positioning
+ 
+### 🍔 Hamburger Menu
+- Mobile navigation toggle
+- Smooth dropdown open/close interaction
+ 
+### ❓ FAQ Accordion
+- Expand / Collapse individual sections
+- Only **one section open at a time**
+- Accessible with proper **ARIA attributes**
+ 
+### 📩 Form Validation + Toast Notification
+- **Email validation** using Regex
+- Visual **error handling UI** for invalid inputs
+- **Toast notification** on successful form submission
+ 
+### 🎞️ App Card Slider
+- Horizontal scroll slider with dynamic width
+- Responsive behavior — adapts to viewport size
+- Prevents empty space at end of track
+ 
+### 📑 Tabs Component
+- Interactive tab switching
+- **Previous / Next** navigation button support
+ 
+### 🪟 Modal Popup
+- Open / Close modal functionality
+- Click **outside** the modal to close
+- Form submission handling inside modal
+ 
+---
+ 
+## 🛠️ Tech Stack
+ 
+| Technology | Usage |
+|---|---|
+| **HTML5** | Structure & Semantics |
+| **CSS3** | Styling, Layout & Animations |
+| **JavaScript (ES6+)** | Interactivity & DOM Manipulation |
+ 
+---
+ 
+## 📂 Project Structure
+ 
+```
 project/
 │
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
-│   ├── images/
-│   └── icons/
-└── README.md
-⚙️ Getting Started
-1. Clone the repository
+├── index.html           # Main HTML file
+├── styles.css           # Global styles & layout
+├── script.js            # All interactivity & logic
+│
+└── assets/
+    ├── images/          # Project images & photos
+    └── icons/           # SVG & icon assets
+```
+ 
+---
+ 
+## ⚙️ Getting Started
+ 
+### 1. Clone the Repository
+ 
+```bash
 git clone https://github.com/your-username/gushwork-assignment.git
-2. Open project
+```
+ 
+### 2. Navigate to the Project Folder
+ 
+```bash
 cd gushwork-assignment
-3. Run
-
-Just open index.html in your browser ✅
+```
+ 
+### 3. Run the Project
+ 
+Just open `index.html` in your browser ✅
+ 
+```bash
+# Optional: use Live Server in VS Code
+# Right-click index.html → "Open with Live Server"
+```
+ 
+---
+ 
+## 📸 Screenshots
+ 
+> _Add screenshots of your project here_
+ 
+| Desktop | Mobile |
+|---|---|
+| ![Desktop Preview](assets/images/desktop.png) | ![Mobile Preview](assets/images/mobile.png) |
+ 
+---
+ 
+## 🧩 Components Breakdown
+ 
+| Component | Description |
+|---|---|
+| Sticky Header | Smooth reveal on scroll |
+| Image Carousel | Thumbnail + zoom feature |
+| Hamburger Menu | Mobile nav toggle |
+| FAQ Accordion | Single-open, ARIA-ready |
+| Form + Toast | Regex validation + success feedback |
+| Card Slider | Responsive horizontal scroll |
+| Tabs | Click + Prev/Next switching |
+| Modal | Overlay with outside-click close |
+ 
+---
+ 
+## 📄 License
+ 
+This project is created as part of the **Gushwork Assignment**. All rights reserved.
+ 
+---
+ 
+<div align="center">
+  <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+</div>
+ 
