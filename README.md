@@ -107,16 +107,7 @@ Just open `index.html` in your browser ✅
 ```
  
 ---
- 
-## 📸 Screenshots
- 
-> _Add screenshots of your project here_
- 
-| Desktop | Mobile |
-|---|---|
-| ![Desktop Preview](assets/images/desktop.png) | ![Mobile Preview](assets/images/mobile.png) |
- 
----
+
  
 ## 🧩 Components Breakdown
  
