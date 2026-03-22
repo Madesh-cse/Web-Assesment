@@ -22,7 +22,7 @@
 
 header {
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 1000;
   width: 100%;
   background-color: #fff;
@@ -115,7 +115,6 @@ header {
 }
 .hero-slider {
   position: relative;
-  max-width: 570px;
   width: 100%;
 }
 
@@ -129,8 +128,8 @@ header {
 
 .zoom-container {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 570px;
+  height: 570px;
 }
 
 .zoom-container img {
@@ -148,9 +147,9 @@ header {
 }
 
 .zoom-preview {
-  position: absolute; 
+  position: absolute;
   right: 30%;
-  top:40%;
+  top: 40%;
   width: 300px;
   height: 250px;
   border-radius: 16px;
@@ -612,8 +611,8 @@ tbody tr:hover {
   margin-bottom: 20px;
 }
 
-#downloadForm{
-    margin: 20px 0 10px 0 ;
+#downloadForm {
+  margin: 20px 0 10px 0;
 }
 
 .modal-box input {
@@ -1996,6 +1995,16 @@ tbody tr:hover {
     text-align: center;
   }
 
+  .main-slide {
+    width: 480px;
+    height: 480px;
+  }
+
+  .zoom-container {
+    width: 480px;
+    height: 480px;
+  }
+
   .table-wrapper {
     width: 100%;
     overflow-x: auto;
@@ -2034,10 +2043,16 @@ tbody tr:hover {
     width: 452px;
     /* border: 1px solid red; */
   }
-  .main-slide img {
-    width: 452px;
-    height: 452px;
+  .main-slide {
+    width: 420px;
+    height: 420px;
   }
+
+  .zoom-container {
+    width: 420px;
+    height: 420px;
+  }
+
   .next {
     right: 10px;
   }
@@ -2177,12 +2192,20 @@ tbody tr:hover {
 
   .hero-slider {
     width: 100%;
-    max-width: 710px;
-    /* border: 1px solid #c0c0c0; */
+  }
+  .main-slide {
+    width: 100%;
+    height: 360px;
   }
 
-  .main-slide img {
+  .zoom-container {
     width: 100%;
+    height: 400px;
+  }
+
+  .zoom-container img {
+    width: 100%;
+    border-radius: 12px;
   }
   .thumbnails {
     gap: 30px;
@@ -2318,6 +2341,22 @@ tbody tr:hover {
   }
   h1 {
     font-size: 22px;
+  }
+  .main-slide {
+    width: 100%;
+    height: 260px;
+  }
+
+  .zoom-container {
+    width: 100%;
+    height: 260px;
+  }
+
+  .zoom-container img {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    cursor: default; /* disable zoom hint on touch */
   }
 
   .apps-title,
