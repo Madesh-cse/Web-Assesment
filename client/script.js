@@ -73,21 +73,17 @@ document.getElementById("faqList").addEventListener("click", function (e) {
 
   const item = btn.closest(".faq-item");
   const isOpen = item.classList.contains("open");
-
-  // Close all items
+  
   document.querySelectorAll(".faq-item").forEach(function (i) {
     i.classList.remove("open");
     i.querySelector(".faq-question").setAttribute("aria-expanded", "false");
   });
-
-  // Open clicked item if it was closed
   if (!isOpen) {
     item.classList.add("open");
     btn.setAttribute("aria-expanded", "true");
   }
 });
 
-// ── Catalogue Form Submit ──
 function handleSubmit() {
   const emailInput = document.getElementById("emailInput");
   const email = emailInput.value.trim();
@@ -105,7 +101,7 @@ function handleSubmit() {
   emailInput.value = "";
 }
 
-// ── Toast Notification ──
+// Toast Notification
 function showToast() {
   const toast = document.getElementById("toast");
   toast.classList.add("show");
@@ -114,7 +110,6 @@ function showToast() {
   }, 3500);
 }
 
-// ── Enter Key Support ──
 document.getElementById("emailInput").addEventListener("keydown", function (e) {
   if (e.key === "Enter") handleSubmit();
 });
@@ -126,7 +121,6 @@ const appsNextBtn = document.getElementById("nextBtn");
 
 let appsIndex = 0;
 
-/* 🔥 GET STEP (dynamic width + gap) */
 function getStep() {
   const card = appsTrack.querySelector(".app-card");
   const trackStyle = window.getComputedStyle(appsTrack);
@@ -137,7 +131,6 @@ function getStep() {
   return cardWidth + gap;
 }
 
-/* 🔥 GET MAX INDEX (no gap issue) */
 function getMaxIndex() {
   const cards = appsTrack.querySelectorAll(".app-card");
   const wrapper = appsTrack.parentElement;
@@ -205,7 +198,6 @@ window.addEventListener('resize', function () {
   updateTrack();
 });
 
-// Init
 updateTrack();
 
 
@@ -233,8 +225,6 @@ function activateTab(index) {
 tabs.forEach((tab, i) => {
   tab.addEventListener("click", () => activateTab(i));
 });
-
-// Prev / Next nav buttons
 document.querySelectorAll(".nav-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const activeIndex = [...tabs].findIndex((t) =>
@@ -253,25 +243,21 @@ document.querySelectorAll(".nav-btn").forEach((btn) => {
   const closeBtn = document.getElementById("closeModalBtn");
   const modal = document.getElementById("modal");
 
-  // Open modal
   openBtn.addEventListener("click", () => {
     modal.classList.add("active");
 
   });
 
-  // Close modal
   closeBtn.addEventListener("click", () => {
     modal.classList.remove("active");
   });
 
-  // Close on outside click
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.remove("active");
     }
   });
 
-  // Form Submit
   document.getElementById("downloadForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
